@@ -67,6 +67,6 @@ def mark_emails_based_on_importance(older_than_days, newer_than_days, file_path=
 	print("Messages marked as trash:", unimportant_count)
 
 if __name__ == "__main__":
-    print("Starting script.")
-    mark_emails_based_on_importance(5, 365, 'contacts_all.csv')
-    print("Script finished.")            
+    older_than_days = 5  # Change this value as needed
+    newer_than_days = 90   # Change this value as needed
+    mark_emails_based_on_importance(older_than_days, newer_than_days)      
